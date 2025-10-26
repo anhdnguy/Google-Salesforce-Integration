@@ -47,7 +47,7 @@ global class CreateEmails {
 		String exist_email;
 		Integer random_index = Math.round((Math.random() * (499) + 101));
         // Email format is F.Lastname.Integer@domain
-        String prefix = getFirstLetter(con.FirstName) + '.' + con.LastName.replaceAll( '\\s+', '')
+        String prefix = getFirstLetter(con.FirstName) + '.' + con.LastName.replaceAll( '\\s+', '');
 		String temp_email = prefix + '.' + random_index  + '@domain';
         
         // Loop until no more duplicate email found
